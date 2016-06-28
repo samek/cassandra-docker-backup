@@ -16,7 +16,7 @@ _NODETOOL=$(which nodetool)
 mkdir /backup/
 ## Do not edit below given variable ##
 
-_TODAY_DATE=$(date +%F)
+_TODAY_DATE=$(date +%F_\%T)
 _BACKUP_SNAPSHOT_DIR="$_BACKUP_DIR/$_TODAY_DATE/SNAPSHOTS"
 _BACKUP_SCHEMA_DIR="$_BACKUP_DIR/$_TODAY_DATE/SCHEMA"
 _SNAPSHOT_DIR=$(find $_DATA_DIR -type d -name snapshots)
